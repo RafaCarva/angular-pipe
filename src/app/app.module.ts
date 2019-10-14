@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 import { CamelCasePipe } from './camel-case.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { CamelCasePipe } from './camel-case.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
