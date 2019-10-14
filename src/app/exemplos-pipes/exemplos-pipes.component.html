@@ -1,0 +1,21 @@
+<h5>Exemplos de Pipes</h5>
+<hr>
+<p>Título: {{ livro.titulo }}</p>
+<p>Título: {{ livro.titulo | uppercase}}</p>
+<hr>
+<p>Estrelas: {{ livro.rating }}</p>
+<p>Estrelas: {{ livro.rating | number:'2.1-2'}}</p><!--Exibe 2 casas ',' exibe de 1 a 2 casas-->
+<hr>
+<p>Páginas: {{ livro.numeroPaginas }}</p>
+<p>Páginas: {{ livro.numeroPaginas | number}}</p>
+<hr>
+<p>Preço: {{ livro.preco }}</p>
+<p>Preço: {{ livro.preco | currency:'BRL' }}</p>
+<hr>
+<p>Data Lançamento: {{ livro.dataLancamento }}</p>
+<p>Data Lançamento: {{ livro.dataLancamento | date:'short' }}</p><!--date:'dd-MM-yy'-->
+<hr>
+<p>Url: {{ livro.url }}</p>
+<hr>
+<p>Livro: {{ livro }}</p>
+<p>Livro: {{ livro | json}}</p>
